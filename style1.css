@@ -1,0 +1,83 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Added CSS */
+tr:hover {
+  animation: rgb-background 2s infinite;
+}
+
+tr:hover td {
+  animation: inverted-text 2s infinite;
+}
+
+@keyframes rgb-background {
+  0% {
+    background-color: rgb(255, 0, 0);
+  }
+  25% {
+    background-color: rgb(0, 255, 0);
+  }
+  50% {
+    background-color: rgb(0, 0, 255);
+  }
+  75% {
+    background-color: rgb(255, 255, 0);
+  }
+  100% {
+    background-color: rgb(255, 0, 0);
+  }
+}
+
+@keyframes inverted-text {
+  0% {
+    color: rgb(0, 0, 0);
+  }
+  25% {
+    color: rgb(255, 255, 255);
+  }
+  50% {
+    color: rgb(255, 255, 255);
+  }
+  75% {
+    color: rgb(0, 0, 0);
+  }
+  100% {
+    color: rgb(0, 0, 0);
+  }
+}
+td {
+  transition: transform 0.2s;
+}
+
+td:hover {
+  transform: scale(1.5);
+}
+
+td {
+  text-align: center;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* style.css */
+
+table {
+  border: 2px solid transparent;
+  animation: animated-border 2s linear infinite;
+}
+
